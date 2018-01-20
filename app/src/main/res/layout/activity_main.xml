@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tholab.sound.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Sound System"
+        android:gravity="center"
+        android:id="@+id/judul"/>
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play sound"
+        android:id="@+id/playsound"
+        android:layout_below="@id/judul"
+        android:layout_centerHorizontal="true"
+        android:onClick="playaudio"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:onClick="pausevideo"
+        android:id="@+id/pause"
+        android:layout_below="@+id/playsound"
+        android:layout_centerHorizontal="true"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbarplay"
+        android:layout_below="@+id/pause"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbarduration"
+        android:layout_below="@+id/seekbarplay"/>
+
+
+</RelativeLayout>
